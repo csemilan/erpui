@@ -1,0 +1,28 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Node",  // Use "Node" for better compatibility
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Path mapping
+    "baseUrl": "./src",  // Set baseUrl to the src folder
+    "paths": {
+      "@/*": ["*"]  // This should map directly to the src directory
+    }
+  },
+  "include": ["vite.config.ts", "src/**/*"]  // Include your source files
+}
